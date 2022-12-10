@@ -1,0 +1,101 @@
+body {
+  background: #232323;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: "Microsoft JhengHei UI Light";
+}
+body h1 {
+  font-family: "Londrina Shadow", cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #e7e1e1;
+  margin: 60px 0 0 0;
+}
+@media screen and (max-width: 500px) {
+  body h1 {
+    font-size: 50px;
+    margin-top: 20px;
+  }
+}
+body h2 {
+  text-align: center;
+  color: darkgrey;
+  margin: 0 0 70px 0;
+}
+@media screen and (max-width: 500px) {
+  body h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+}
+body .dishes {
+  height: 200px;
+  margin: 40px 0 0 0;
+  background-size: cover;
+  border-radius: 12px;
+  position: relative;
+}
+@media screen and (max-width: 500px) {
+  body .dishes {
+    margin: 20px 12px 0 12px;
+  }
+}
+body .dishes p {
+  color: rgb(255, 255, 255);
+  background: black;
+  background: linear-gradient(bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.4));
+  background: -webkit-linear-gradient(bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.4));
+  background: -moz-linear-gradient(bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+  height: 30px;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+}
+@media screen and (max-width: 500px) {
+  body .dishes p {
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 15px;
+  }
+}
+body .dishes small {
+  opacity: 0;
+}
+@media screen and (max-width: 500px) {
+  body .dishes small {
+    font-size: 16px;
+  }
+}
+body .show-description p {
+  height: 90px;
+}
+@media screen and (max-width: 500px) {
+  body .show-description p {
+    height: 140px;
+  }
+}
+body .show-description small {
+  opacity: 1;
+  transition-delay: 0.2s;
+  transition-duration: 0.2s;
+}
+body .first {
+  background-image: url("../img/firstcourse.jpg");
+}
+body .second {
+  background-image: url("../img/secondcourse.jpg");
+}
+body .dessert {
+  background-image: url("../img/dessertcourse.jpg");
+}
+body .price {
+  float: right;
+}
+
+/*# sourceMappingURL=style.css.map */

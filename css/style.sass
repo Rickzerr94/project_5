@@ -1,0 +1,78 @@
+@mixin max-screen($res)
+  @media screen and (max-width: $res)
+    @content
+body
+  background: #232323
+  max-width: 600px
+  margin: 0 auto
+  font-family: "Microsoft JhengHei UI Light"
+  h1
+    font-family: 'Londrina Shadow', cursive
+    text-align: center
+    font-size: 75px
+    color: #e7e1e1
+    margin: 60px 0 0 0
+    @include max-screen(500px)
+      font-size: 50px
+      margin-top: 20px
+      //line-height: 24px
+  h2
+    text-align: center
+    color: darkgrey
+    margin: 0 0 70px 0
+    @include max-screen(500px)
+      font-size: 20px
+      margin: 20px 0 30px 0
+  .dishes
+    height: 200px
+    margin: 40px 0 0 0
+    background-size: cover
+    border-radius: 12px
+    position: relative
+    @include max-screen(500px)
+      margin: 20px 12px 0 12px
+    p
+      color: rgba(255, 255, 255, 1)
+      background: black
+      background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,0.4))
+      background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,0.4))
+      background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,0.4))
+      padding: 10px
+      line-height: 28px
+      text-align: justify
+      position: absolute
+      bottom: 0
+      margin-bottom: 0
+      height: 30px
+      transition: height .5s
+      -webkit-transition: height .5s
+      -moz-transition: height .5s
+      @include max-screen(500px)
+        font-size: 20px
+        line-height: 20px
+        padding-bottom: 15px
+    span
+
+    small
+      opacity: 0
+      @include max-screen(500px)
+        font-size: 16px
+  .show-description
+    p
+     height: 90px
+     @include max-screen(500px)
+       height: 140px
+  .show-description
+    small
+      opacity: 1
+      transition-delay: .2s
+      transition-duration: .2s
+  .first
+    background-image: url("../img/firstcourse.jpg")
+  .second
+    background-image: url("../img/secondcourse.jpg")
+  .dessert
+    background-image: url("../img/dessertcourse.jpg")
+  .price
+    float: right
+
